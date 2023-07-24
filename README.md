@@ -133,11 +133,23 @@
 
    However, it's essential to note that only the declarations are hoisted, not the initializations (assignments). The variables will be initialized with the value undefined until the actual assignment is encountered during runtime.
 
+   Function declarations are also hoisted to the top of their scope, and this behavior allows you to call functions before their actual declarations in the code. However, function expressions (functions assigned to variables including arrow functions) are not hoisted in the same way as function declarations.
+
   </details>
 
 4. <details><summary>What is the this keyword in JavaScript?</summary>
 
-   In JavaScript, the this keyword is a special context-sensitive variable that refers to the current execution context or the "owner" of the code that is currently being executed. The value of this depends on how and where a function is called or how an object method is invoked.
+   In JavaScript, the `this` keyword is a special context-sensitive variable that refers to the current execution context or the "owner" of the code that is currently being executed. The value of `this` depends on how and where a function is called or how an object method is invoked. Some common uses are:
+
+   - Method Invocation: When a function is called as a method of an object, `this` is used to access the properties and methods of that object. It allows the method to reference and operate on the data within the object.
+   - Constructor Functions: `This` is used inside constructor functions to refer to the newly created object instance. It allows the constructor to set properties and initialize the object's state.
+   - Event Handlers: In event handlers, such as those used with HTML elements, `this` often refers to the element that triggered the event. It allows you to manipulate the element or access its attributes and data.
+
+   Here is how `this` behaves in other scenarios:
+
+   - Global Context: In the global scope (outside of any function), `this` refers to the global object. In a web browser, the global object is typically the window object.
+   - Function Context: Inside a regular function (not an arrow function), the value of `this` is determined by how the function is called. When a function is called as a standalone function (not attached to an object), `this` will also refer to the global object.
+   - Arrow Functions: Arrow functions have a different behavior for `this`. They capture the value of `this` from the surrounding (lexical) context at the time of their creation, rather than when they are executed. As a result, the value of `this` inside an arrow function is not affected by how the function is called.
 
   </details>
 
