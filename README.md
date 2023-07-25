@@ -9,8 +9,8 @@
 | [HTML5](#html5)           | 5    |
 | [CSS](#css)               | 4    |
 | [CSS Code](#css-code)     | 1    |
-| [JavaScript](#javascript) | 4    |
-| [React](#react)           | 0    |
+| [JavaScript](#javascript) | 6    |
+| [React](#react)           | 3    |
 
 ## HTML5
 
@@ -150,6 +150,56 @@
    - Global Context: In the global scope (outside of any function), `this` refers to the global object. In a web browser, the global object is typically the window object.
    - Function Context: Inside a regular function (not an arrow function), the value of `this` is determined by how the function is called. When a function is called as a standalone function (not attached to an object), `this` will also refer to the global object.
    - Arrow Functions: Arrow functions have a different behavior for `this`. They capture the value of `this` from the surrounding (lexical) context at the time of their creation, rather than when they are executed. As a result, the value of `this` inside an arrow function is not affected by how the function is called.
+
+  </details>
+
+5. <details><summary>What are higher-order functions (HOFs)?</summary>
+
+   A HOF is a function that takes another function as an argument. In JavaScript, functions are considered "first-class citizens," meaning they can be treated like any other data type, including being passed as arguments to other functions. The function passed as an argument is called a callback.
+
+  </details>
+
+6. <details><summary>What are callbacks?</summary>
+
+   Callbacks are functions passed as arguments to other functions in JavaScript. They allow you to execute a piece of code at a later time or after a certain event has occurred. Callbacks are an essential concept in asynchronous programming, where tasks might take some time to complete, and you want to specify what to do once the task is finished.
+
+  </details>
+
+**[⬆ Back to Top](#table-of-contents)**
+
+## REACT
+
+1. <details><summary>What is the Virtual DOM?</summary>
+
+   The Virtual DOM is a concept in React that serves as an intermediary representation of the actual DOM (Document Object Model) used by web browsers.
+
+   Here are some benefits:
+
+   **Efficient Updates:** When state or props of a component change, React performs a process known as "reconciliation." It calculates the difference between the previous Virtual DOM and the new Virtual DOM to identify the minimal set of changes needed to update the actual DOM. This process is called "diffing."
+
+   **Batch Updates:** React optimizes DOM updates by batching multiple changes together. Instead of updating the actual DOM after each individual change, React performs a batch update, making it more efficient.
+
+  </details>
+
+2. <details><summary>What are React hooks, and how do they differ from class-based components?</summary>
+
+   React hooks are functions that allow functional components in React to have state and perform lifecycle-related tasks, which were previously only possible with class-based components. Hooks were introduced in React version 16.8 to provide a more concise and intuitive way of managing state and side effects in functional components. In general, hooks provide a more concise, readable, and powerful way of handling state and side effects in React components.
+
+   Here are some benefits:
+
+   **No Class Syntax:** One of the primary advantages of hooks is that they eliminate the need to use class syntax in functional components. Class-based components involve boilerplate code for constructor, lifecycle methods, and binding event handlers. Hooks, on the other hand, use regular JavaScript functions, making the code cleaner and more straightforward.
+
+   **Lifecycle Management with useEffect:** The useEffect hook handles side effects in functional components. It replaces various lifecycle methods (such as componentDidMount, componentDidUpdate, and componentWillUnmount) that were used in class-based components. This makes it easier to organize and manage side effects.
+
+   **Custom Hooks for Code Reusability:** With hooks, you can create custom hooks to encapsulate and share stateful logic across components. This promotes code reusability and abstraction without the need for higher-order components (HOCs) or render props.
+
+  </details>
+
+3. <details><summary>What are higher-order components (HOCs) and how do you use them?</summary>
+
+   HOCs are a design pattern in React where a function that takes a component as an argument and returns a new component with additional props or functionality. It allows you to abstract logic that can be shared across multiple components, promoting code reusability.
+
+   While HOCs can be powerful, they can also lead to a complex component hierarchy if used excessively. As an alternative, you can consider using custom hooks, which provide a more concise and elegant way to share logic between components without the nesting involved in HOCs.
 
   </details>
 
