@@ -165,6 +165,79 @@
 
   </details>
 
+7. <details><summary>What is Mutability in JavaScript?</summary>
+
+   In JavaScript, mutability refers to the property of an object whose state or values can be changed after it has been created. In other words, mutable objects can be modified, while immutable objects cannot be changed once they are created.
+
+  </details>
+
+8. <details><summary>Is string a primitive or a reference data type?</summary>
+
+   In JavaScript, a string is immutable making it a primitive data type. Even though string have methods, any operations you perform on the string, such as using methods like .toUpperCase() or .substring(), do not modify the original string. Instead, they create and return new strings based on the original one, leaving the original string unchanged.
+
+  </details>
+
+9. <details><summary>How many primitive data types exists and what are they?</summary>
+
+   There are 7 primitive data types in JS: String, Number, Boolean, Undefined, Null, Symbol and Bigint.
+
+  </details>
+
+10. <details><summary>What is the difference between primitive and reference data types?</summary>
+
+    The main difference between primitive and reference data types in JavaScript lies in how they are stored and how they behave when assigned to variables or passed as arguments to functions.
+
+    <details><summary>Storage and Assignment</summary>
+
+    Primitive Data Types: When a variable is assigned a primitive data type (e.g., number, string, boolean, null, undefined, symbol, or bigint), the variable stores the actual value of that data type. Assigning a primitive value to a new variable creates a copy of that value.
+
+    ```js
+    let a = 5;
+    let b = a; // 'b' gets a copy of the value stored in 'a'.
+    a = 10; // Changing the value of 'a' doesn't affect 'b'.
+    console.log(a); // Output: 10
+    console.log(b); // Output: 5
+    ```
+
+    Reference Data Types: On the other hand, when a variable is assigned a reference data type (e.g., objects, arrays, functions), the variable stores a reference or memory address pointing to the location in memory where the actual data is stored. Assigning a reference value to a new variable creates a new reference to the same data, not a new copy of the data itself.
+
+    ```js
+    let arr1 = [1, 2, 3];
+    let arr2 = arr1; // 'arr2' gets a reference to the same array as 'arr1'.
+    arr1.push(4); // Modifying 'arr1' also affects 'arr2'.
+    console.log(arr1); // Output: [1, 2, 3, 4]
+    console.log(arr2); // Output: [1, 2, 3, 4] (Both 'arr1' and 'arr2' reference the same array.)
+    ```
+
+    </details>
+
+    <details><summary>Mutability</summary>
+
+    Primitive Data Types: Primitive values are immutable, meaning their values cannot be changed after they are created. Operations on primitive values create new values rather than modifying the original values.
+
+    ```js
+    let str1 = "Hello";
+    let str2 = str1.toUpperCase(); // 'toUpperCase()' creates a new string; 'str1' remains unchanged.
+    console.log(str1); // Output: "Hello"
+    console.log(str2); // Output: "HELLO"
+    ```
+
+    Reference Data Types: Reference values are mutable, meaning their properties or elements can be modified after they are created. Changes to a referenced object are reflected in all references to that object.
+
+    ```js
+    let obj1 = { name: "John" };
+    let obj2 = obj1; // 'obj2' gets a reference to the same object as 'obj1'.
+    obj1.age = 30; // Modifying 'obj1' also affects 'obj2'.
+    console.log(obj1); // Output: { name: "John", age: 30 }
+    console.log(obj2); // Output: { name: "John", age: 30 } (Both 'obj1' and 'obj2' reference the same object.)
+    ```
+
+    </details>
+
+    In summary, primitive data types store the actual values, are copied by value, and are immutable. In contrast, reference data types store memory references, are copied by reference, and are mutable. Understanding these differences is crucial for correctly handling and manipulating data in JavaScript.
+
+  </details>
+
 **[⬆ Back to Top](#table-of-contents)**
 
 ## REACT
