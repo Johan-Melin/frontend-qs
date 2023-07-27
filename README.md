@@ -10,7 +10,7 @@
 | [CSS](#css)               | 4    |
 | [CSS Code](#css-code)     | 1    |
 | [JavaScript](#javascript) | 6    |
-| [React](#react)           | 3    |
+| [React](#react)           | 4    |
 
 ## HTML5
 
@@ -273,6 +273,38 @@
    HOCs are a design pattern in React where a function that takes a component as an argument and returns a new component with additional props or functionality. It allows you to abstract logic that can be shared across multiple components, promoting code reusability.
 
    While HOCs can be powerful, they can also lead to a complex component hierarchy if used excessively. As an alternative, you can consider using custom hooks, which provide a more concise and elegant way to share logic between components without the nesting involved in HOCs.
+
+  </details>
+
+4. <details><summary>What are the major features of React?</summary>
+
+   React is a popular JavaScript library for building user interfaces, and it comes with a range of powerful features that make it efficient and flexible. Some of the major features of React include:
+
+   1. Component-Based Architecture: React follows a component-based architecture, where the UI is broken down into reusable and self-contained components. Components can be composed and nested to build complex user interfaces efficiently.
+
+   2. Virtual DOM (Document Object Model): React uses a virtual DOM to efficiently update the actual DOM when there are changes in the component state or props. The virtual DOM minimizes direct manipulation of the real DOM, which can be a costly operation, resulting in improved performance.
+
+   3. JSX (JavaScript XML): React uses JSX, a syntax extension that allows you to write HTML-like code directly in JavaScript. JSX simplifies the creation of React elements and makes the code more readable.
+
+   4. Unidirectional Data Flow: React follows a unidirectional data flow, where data flows in one direction, from parent components to child components. This data flow helps to maintain a predictable state management and simplifies debugging.
+
+   5. Reconciliation: React efficiently updates the DOM by performing a process called reconciliation. When there are changes in the component's state or props, React determines the minimal changes required and updates only the necessary parts of the DOM.
+
+   6. React Hooks: Introduced in React 16.8, hooks allow functional components to have state and lifecycle methods previously only available in class components. Hooks make it easier to reuse stateful logic between components and encourage functional programming patterns.
+
+   7. Context API: React provides a Context API to pass data through the component tree without the need to pass props manually at every level. Context allows for more straightforward management of global or shared states within the application.
+
+   8. Lifecycle Methods: In class components, React offers lifecycle methods like componentDidMount, componentDidUpdate, and componentWillUnmount that allow developers to perform actions at specific stages of a component's life.
+
+   9. Conditional Rendering: React supports conditional rendering, allowing components to render different content based on certain conditions. This enables dynamic and flexible user interfaces.
+
+   10. React Router: While not built directly into React, React Router is a popular third-party library that provides declarative routing for single-page applications, allowing easy navigation and rendering of different components based on the URL.
+
+   11. Server-Side Rendering (SSR): React can be used for server-side rendering, allowing the initial page load to be rendered on the server-side for better SEO and faster initial load times.
+
+   12. Error Handling: React has error boundaries, which are special components that catch and handle errors occurring in their child components, preventing the entire application from breaking due to a single error.
+
+   These are some of the major features that make React a powerful and widely used library for building modern web applications with a focus on performance, reusability, and maintainability.
 
   </details>
 
