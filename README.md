@@ -10,7 +10,7 @@
 | [CSS](#css)               | 4    |
 | [CSS Code](#css-code)     | 1    |
 | [JavaScript](#javascript) | 6    |
-| [React](#react)           | 4    |
+| [React](#react)           | 5    |
 
 ## HTML5
 
@@ -291,6 +291,12 @@
    5. React Hooks: Hooks provide a functional approach to state management and lifecycle methods in functional components, resulting in more concise and readable code.
 
    These are some of the major features that make React a powerful and widely used library for building modern web applications with a focus on performance, reusability, and maintainability.
+
+  </details>
+
+5. <details><summary>How do you handle routing in a React application?</summary>
+
+   There are several ways to handle routing in a React application. One popular approach is to use the third-party library "React Router." It provides a declarative way to define routes and handle navigation in a single-page application (SPA) without reloading the entire page. By defining routes using Router, Route, and Switch components, and using Link for navigation, React Router efficiently manages navigation between different views.
 
   </details>
 
