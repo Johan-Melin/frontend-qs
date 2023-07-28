@@ -280,15 +280,15 @@
 
    React is a popular JavaScript library for building user interfaces, and it comes with a range of powerful features that make it efficient and flexible. Some of the major features of React include:
 
-   Component-Based Architecture: React's component-based architecture promotes reusability, modularity, and maintainability, allowing developers to build UIs as a collection of reusable and independent components.
+   1. Component-Based Architecture: React's component-based architecture promotes reusability, modularity, and maintainability, allowing developers to build UIs as a collection of reusable and independent components.
 
-   Virtual DOM: React's Virtual DOM optimizes rendering by updating only the necessary parts of the actual DOM, resulting in improved performance and a smoother user experience.
+   2. Virtual DOM: React's Virtual DOM optimizes rendering by updating only the necessary parts of the actual DOM, resulting in improved performance and a smoother user experience.
 
-   JSX (JavaScript XML): JSX simplifies the creation of React elements by allowing developers to write HTML-like code directly in JavaScript, making the code more readable and intuitive.
+   3. JSX (JavaScript XML): JSX simplifies the creation of React elements by allowing developers to write HTML-like code directly in JavaScript, making the code more readable and intuitive.
 
-   Unidirectional Data Flow: React's unidirectional data flow ensures predictable state management, making it easier to understand how data changes and flows through the application.
+   4. Unidirectional Data Flow: React's unidirectional data flow ensures predictable state management, making it easier to understand how data changes and flows through the application.
 
-   React Hooks: Hooks provide a functional approach to state management and lifecycle methods in functional components, resulting in more concise and readable code.
+   5. React Hooks: Hooks provide a functional approach to state management and lifecycle methods in functional components, resulting in more concise and readable code.
 
    These are some of the major features that make React a powerful and widely used library for building modern web applications with a focus on performance, reusability, and maintainability.
 
