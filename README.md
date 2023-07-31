@@ -10,7 +10,7 @@
 | [CSS](#css)               | 4    |
 | [CSS Code](#css-code)     | 1    |
 | [JavaScript](#javascript) | 6    |
-| [React](#react)           | 5    |
+| [React](#react)           | 7    |
 
 ## HTML5
 
@@ -299,5 +299,35 @@
    There are several ways to handle routing in a React application. One popular approach is to use the third-party library "React Router." It provides a declarative way to define routes and handle navigation in a single-page application (SPA) without reloading the entire page. By defining routes using Router, Route, and Switch components, and using Link for navigation, React Router efficiently manages navigation between different views.
 
   </details>
+
+6. <details><summary>How can you optimize the performance of React applications?</summary>
+
+   1. **Minimize Rendering and Reconciliation:**
+      Use React's memoization techniques like React.memo and shouldComponentUpdate (for class components) to prevent unnecessary re-renders of components.
+      Utilize the PureComponent (for class components) or React.PureComponent (for functional components) to automatically handle shallow prop and state comparisons for updates which prevent unnecessary re-renders of components when there are no changes to the component's props or state.
+   2. **Virtualization and Infinite Scrolling:**
+      For long lists or data grids, consider using virtualization libraries like react-virtualized or react-window to render only the visible items, reducing the DOM size and improving initial loading times.
+   3. **Optimize Images and Assets:**
+      Compress and optimize images and other assets to reduce their file size. Use modern image formats like WebP and consider lazy-loading images.
+   4. **Avoid Unnecessary State Updates:**
+      Be mindful of when and where you update state, as unnecessary updates can trigger additional re-renders. Use useCallback to memoize event handlers and prevent them from changing on every render.
+   5. **Performance Profiling:**
+      Use browser developer tools to profile your application's performance. Identify bottlenecks and areas for improvement.
+
+</details>
+
+7. <details><summary>Explain React's context API and its use cases?</summary>
+
+   React's Context API is a feature that allows data to be passed down the component tree without the need to pass props explicitly at every level. It helps in managing global or shared state in a React application and simplifies the process of sharing data between components that are not directly related in the component tree.
+
+   The Context API consists of two main parts:
+
+   1. **Context Provider:**
+      The Context Provider is a React component that wraps the component tree and holds the data that needs to be shared across components. It provides a context object to its descendants.
+
+   2. **Context Consumer:**
+      The Context Consumer is a React component that accesses the data provided by the Context Provider. It can be used within components that need the shared data, and it allows them to subscribe to changes in that data.
+
+</details>
 
 **[⬆ Back to Top](#table-of-contents)**
