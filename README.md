@@ -6,7 +6,7 @@
 
 | Topic                     | # Qs |
 | ------------------------- | ---- |
-| [HTML5](#html5)           | 5    |
+| [HTML5](#html5)           | 6    |
 | [CSS](#css)               | 4    |
 | [CSS Code](#css-code)     | 1    |
 | [JavaScript](#javascript) | 6    |
