@@ -49,6 +49,15 @@
    You use IDs when you need unique identification for an element, and classes when you want to group elements with shared characteristics.
    </details>
 
+6. <details><summary>What are empty elements in HTML?</summary>
+
+   In HTML, an "empty element" refers to an element that doesn't have any content between an opening tag and a closing tag because it doesn't require any inner text or nested elements. Empty elements are also known as "self-closing elements" or "void elements."
+
+   These elements are used to embed or represent various types of content within a web page and don't require a closing tag. Instead, they are typically written using a single tag, sometimes followed by a forward slash (/) before the closing angle bracket (>).
+
+   Some examples are `<img>`, `<br>`, `<input>`, `<hr>`, `<meta>` and `<link>`.
+   </details>
+
 **[⬆ Back to Top](#table-of-contents)**
 
 ## CSS
