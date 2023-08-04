@@ -9,7 +9,7 @@
 | [HTML5](#html5)           | 6    |
 | [CSS](#css)               | 4    |
 | [CSS Code](#css-code)     | 1    |
-| [JavaScript](#javascript) | 11   |
+| [JavaScript](#javascript) | 6    |
 | [React](#react)           | 7    |
 
 ## HTML5
