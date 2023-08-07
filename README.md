@@ -230,19 +230,18 @@
 
 11. <details><summary>What is event delegation?</summary>
 
-Event delegation is a design pattern in web development where you attach a single event listener to a higher-level or parent element, rather than attaching individual event listeners to multiple child elements. This pattern is used to efficiently handle events on a large number of elements, especially when those elements share a common ancestor or container.
+    Event delegation is a design pattern in web development where you attach a single event listener to a higher-level or parent element, rather than attaching individual event listeners to multiple child elements. This pattern is used to efficiently handle events on a large number of elements, especially when those elements share a common ancestor or container.
 
-**Benefits** of Event Delegation:
+    **Benefits of Event Delegation:**
 
-**Efficiency**: Event delegation reduces the number of event listeners in the DOM, leading to better performance and less memory consumption, especially when dealing with a large number of elements.
+    **Efficiency**: Event delegation reduces the number of event listeners in the DOM, leading to better performance and less memory consumption, especially when dealing with a large number of elements.
 
-**Dynamic Content**: It works seamlessly with dynamically added or removed elements, as you don't need to attach new event listeners when elements are added or replaced.
+    **Dynamic Content**: It works seamlessly with dynamically added or removed elements, as you don't need to attach new event listeners when elements are added or replaced.
 
-**Simplicity**: You only need to manage one event listener on a parent element, simplifying your code and making it easier to maintain.
+    **Simplicity**: You only need to manage one event listener on a parent element, simplifying your code and making it easier to maintain.
 
-**Memory Management**: Event delegation can help avoid memory leaks, as it doesn't require you to manually remove event listeners when elements are removed from the DOM.
-
-   </details>
+    **Memory Management**: Event delegation can help avoid memory leaks, as it doesn't require you to manually remove event listeners when elements are removed from the DOM.
+    </details>
 
 **[⬆ Back to Top](#table-of-contents)**
 
