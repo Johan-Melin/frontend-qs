@@ -22,7 +22,7 @@
    Some of the key semantic elements include _header_, _nav_, _main_ and _section_. Some non semantic elements are _div_ and _span_.
    </details>
 
-2. <details><summary>What is flexbox?</summary>
+2. <details><summary>What is doctype?</summary>
 
    In HTML5, the <!DOCTYPE> declaration is used to specify the type and version of the HTML being used in the web document. The purpose of the <!DOCTYPE> declaration is to tell the web browser which version of HTML to expect and how to parse and render the content.
 
